@@ -7,4 +7,5 @@ sandbox
     anothr new writekl:
 sdf
 asdfasfsf
-asdfasdfasft branch --set-upstreamkt branch --set-upstream
+asdfasine = dfasf
+a new rename to pish
