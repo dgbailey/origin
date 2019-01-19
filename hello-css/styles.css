@@ -4,11 +4,16 @@ body {
         background-color: #EEEEEE;    /* Light gray */
         font-size: 18px; /*setting base font for document*/
 }
-h1{
-    font-size: 2em;
+h1,h2,h3,h4,h5,h6{
+font-family: 'Helvetica', 'Arial',sans-serif;}
+
+/* web fonts vs system fonts. The above defaults to system default fonts in case en users' system dosn't have the first two fonts. */
+
+/*list styles*/
+ul {
+    list-style-type: circle;
 }
 
-h2{
-    font-size:1.6em;
-
+ol{
+    list-style-type:lower-roman;
 }
