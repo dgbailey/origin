@@ -2,5 +2,13 @@
 body {
       color: #414141;               /* Dark gray */
         background-color: #EEEEEE;    /* Light gray */
+        font-size: 18px; /*setting base font for document*/
+}
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size:1.6em;
 
 }
