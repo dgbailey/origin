@@ -5,7 +5,9 @@ body {
         font-size: 18px; /*setting base font for document*/
 }
 h1,h2,h3,h4,h5,h6{
-font-family: 'Helvetica', 'Arial',sans-serif;}
+    font-family: 'Helvetica', 'Arial',sans-serif;
+}
+
 
 /* web fonts vs system fonts. The above defaults to system default fonts in case en users' system dosn't have the first two fonts. */
 
@@ -17,3 +19,11 @@ ul {
 ol{
     list-style-type:lower-roman;
 }
+
+p{
+    text-decoration:none;
+}
+/* meaning should always be communicated via html not css */
+
+/* the cascade */
+/* external style sheet<page specific style>inline style */
