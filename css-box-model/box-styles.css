@@ -1,0 +1,19 @@
+h1,p {
+    background-color: #DDE0E3;
+}
+
+em,strong {
+    background-color: #B2D6FF;
+}
+
+p {
+    padding: 20px 0 20px 10px;  /* Top  Right  Bottom  Left */
+    margin-bottom: 50px;
+    /* margins are always transparent, padding increases click area,margins collapse vertically. */
+}
+
+h1 {
+    padding: 50px;
+    border-bottom: 1px solid #5D6063; 
+    /* size style color */
+}
