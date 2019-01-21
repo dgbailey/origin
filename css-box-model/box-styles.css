@@ -1,3 +1,9 @@
+* {/*global css selector. Overriding page defaults*/
+       margin: 0;
+         padding: 0;
+           box-sizing: border-box;
+           
+     }
 h1,p {
     background-color: #DDE0E3;
 }
@@ -8,6 +14,7 @@ em,strong {
 
 p {
     padding: 20px 0 20px 10px;  /* Top  Right  Bottom  Left */
+    margin-top: 25px;
     margin-bottom: 50px;
     /* margins are always transparent, padding increases click area,margins collapse vertically. */
 }
@@ -16,4 +23,24 @@ h1 {
     padding: 50px;
     border-bottom: 1px solid #5D6063; 
     /* size style color */
+    /* always check display: box,inline property */
+    /* when setting margins, top margins of stacked boxes collapse into bottom margins of boxes above. */
+}
+div {
+color: #FFF;
+background-color: #5995DA;
+font-weight: bold;
+padding: 20px;
+text-align: center;
+border: 2px solid #5D6063;
+border-radius: 5px;
+width: 200px;
+box-sizing: border-box;
+margin: 20px auto;
+}
+/* This is much more intuitive, and as a result, using border-box for all your boxes is considered a best practice among modern web developers. */
+/* div and span: former block level latter for inline */
+
+body {
+    text-align: center;/*will only align text blocks and inline blocks*ch aligns the content and inline boxes inside of a block-level element*\
 }
