@@ -19,3 +19,23 @@
                   width: 200px;
                     margin: 20px auto;
 }
+
+.page {
+
+    width: 600px;
+      margin: 0 auto;
+}
+
+.call-to-action{
+    font-style: italic;
+      background-color: #EEB75A;
+} /*with conflicting styles, the lower in the css sheet is used*/
+
+
+/* lets add descendent selector for em in first paragraph */
+
+.synopsis em{
+
+    font-style: normal;
+}
+
