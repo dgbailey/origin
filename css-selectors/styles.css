@@ -5,10 +5,12 @@
     
 }
 
-.buttonz {
+.buttonz:link, .buttonz:visited {
 
 
-    r: #FFF;
+    color: #FFF;
+    display: block;
+    text-decoration: none;
       background-color: #5995DA;    /* Blue */
         font-weight: bold;
           padding: 20px;
@@ -20,16 +22,45 @@
                     margin: 20px auto;
 }
 
+.buttonz:hover,
+.buttonz:visited:hover{
+
+    color: #FFF;
+    background-color:#76AEED;
+}
+
+.buttonz:active,
+.buttonz:visited:active{
+
+    color:#FFF;
+    background-color:#5995DA;
+}
+
 .page {
 
     width: 600px;
       margin: 0 auto;
 }
 
-.call-to-action{
-    font-style: italic;
-      background-color: #EEB75A;
-} /*with conflicting styles, the lower in the css sheet is used*/
+.call-to-action:link,
+.call-to-action:visited {
+      font-style: italic;
+        background-color: #EEB75A;     /* Yellow */
+
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+      background-color: #F5CF8E;     /* Light yellow */
+
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+      background-color: #EEB75A;     /* Yellow */
+
+}
+ /*with conflicting styles, the lower in the css sheet is used*/
 
 
 /* lets add descendent selector for em in first paragraph */
@@ -39,7 +70,7 @@
     font-style: normal;
 }
 //* use sudo classes for styling the state of an html element */
-
+/* psuedos allow us to modify display without changing underlying html */
 a:link {
       color: blue;
         text-decoration: none;
@@ -65,3 +96,8 @@ a:visited:hover {
 
 }
 /* dedicated styles can be created for specific states by chaining pseudo classes */
+
+#button-2 {
+      color: #5D6063;  /* Dark gray */
+
+}

@@ -8,7 +8,8 @@
                         <body>
                         <div class='page'>
                                 <h1>CSS Selectors</h1>
-
+                                <a href='#button-2'>Go to Button Two</a>
+<!-- id selectors also act as fragments for direction to spec parts of pages -->
                                 <p class='synopsis'>CSS selectors let you <em>select</em> individual HTML elements in an HTML
                                 document. This is <strong>super</strong> useful.</p>
 
@@ -19,12 +20,26 @@
                                 <a href='https://internetingishard.com'>Interneting Is Hard</a> for us to
                                 style.</p>
 
-                                <div class='buttonz'>Button One</div>
-                        <div class='buttonz call-to-action'>
-                            Button Two
+                                <!-- <div class='buttonz'>Button One</div> -->
+                                <h1>Speficity (High to Low)</h1>
+                                <ul>
+                                    <li>#button-2</li>
+                                    <li>.button:link</li>
+                                    <li>a:link and .synopsis em</li>
+                                    <li>a</li>
+                                </ul>
+                                <a class='buttonz' href="">Button1</a>
+                                <a id='button-2' class='buttonz call-to-action' href="">Button_2</a>
+                                <p>Other pseudo types <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">here</a></p>
+                        <!-- <div class='buttonz call-to-action'> -->
+                            <!-- Button Two -->
+                            <div class='sidebar'>
+                                  <p>If this page had a sidebar...</p>
+                                    <p>We’d have some problems with pseudo-classes.</p>
+                            </div>
                         </div>
                             <!-- /*two in one classes*/ -->
-                        </div>
+                        <!-- </div> -->
 
                                                     </body>
 </html>
