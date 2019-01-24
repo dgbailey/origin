@@ -1,0 +1,44 @@
+* {
+    *
+        *margin: 0;
+        padding: 0;
+        box-sizing; border-box;
+    * }
+/* important ONLY NON FLOATED elements contribute to the height of a divv */    
+
+    .page {
+          width: 900px;
+            margin: 0 auto;
+
+            border: 1px solid red;  /* Add this */
+    }
+   .sidebar {
+          height: 300px;
+          width: 200px;
+            background-color: #F09A9D;    /* Red */
+            float: left;
+/* floated elements always align to the left or right of their parent element */
+
+    }
+
+    .content {
+          height: 500px;
+          width:650px;
+          float: left;
+            background-color: #F5CF8E;    /* Yellow */
+
+            /* floating multiple elements in the same direction will cause them to stack horizontally but rotated 90 degrees */
+    }
+
+    .footer {
+          height: 200px;
+            background-color: #D6E9FE;    /* Light blue */
+            clear:both;
+
+    }
+    
+    .menu {
+          height: 100px;
+            background-color: #B2D6FF;    /* Medium blue */
+
+    }
