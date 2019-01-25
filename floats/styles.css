@@ -3,42 +3,92 @@
         *margin: 0;
         padding: 0;
         box-sizing; border-box;
-    * }
-/* important ONLY NON FLOATED elements contribute to the height of a divv */    
+        * }
+        /* important ONLY NON FLOATED elements contribute to the height of a divv */    
 
-    .page {
-          width: 900px;
+        .page {
+            width: 900px;
             margin: 0 auto;
+            overflow:hidden;
+        }
+        .container {
+            /* overflow: hidden; */
+            background-color: #EAEDF0;
 
-            border: 1px solid red;  /* Add this */
-    }
-   .sidebar {
-          height: 300px;
-          width: 200px;
+        }
+
+        .sidebar {
+            height: 300px;
+            width: 200px;
             background-color: #F09A9D;    /* Red */
             float: left;
-/* floated elements always align to the left or right of their parent element */
+            /* floated elements always align to the left or right of their parent element */
 
-    }
+        }
 
-    .content {
-          height: 500px;
-          width:650px;
-          float: left;
+        .content {
+            padding:20px;
+            height: 500px;
+            width:650px;
+            float: left;
             background-color: #F5CF8E;    /* Yellow */
 
             /* floating multiple elements in the same direction will cause them to stack horizontally but rotated 90 degrees */
-    }
+        }
 
-    .footer {
-          height: 200px;
+        .footer {
+            overflow:hidden;
+            /* /1* height: 400px; *1/specific height is not flexible for accomodating more divs in footer */
             background-color: #D6E9FE;    /* Light blue */
-            clear:both;
+            /* clear:both; */
 
-    }
-    
-    .menu {
-          height: 100px;
+        }
+
+        .menu {
+            height: 100px;
             background-color: #B2D6FF;    /* Medium blue */
 
-    }
+        }
+
+        .column{
+        float: left;
+          width: 31%;
+            margin: 20px 1.15%;
+              height: 160px;
+                background-color: #B2D6FF;    /* Medium blue */
+                /* overflow:hidden; */
+            }
+
+        .p {
+                padding:20px;
+            }
+
+
+
+            .article-image {
+              float: left;
+                width: 300px;
+                  height: 200px;
+                    margin-right: 20px;
+                      margin-bottom: 20px;
+            }
+            
+            .avatar {
+                  float: left;
+                    width: 60px;
+                      height: 60px;
+                        margin: 25px;
+                          border-radius: 40px;
+                            background-color: #D6E9FE;
+            }
+
+            .username {
+                  margin-top: 30px;
+
+            }
+
+            .comment {
+                  margin: 10px;
+                    overflow: hidden;  /* This is important */
+
+            }
