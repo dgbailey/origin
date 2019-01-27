@@ -4,21 +4,46 @@
     * box-sizing:border-box;
     * }
 
-.menu-container {
-      color: #fff;
+    .menu-container {
+        color: #fff;
         background-color: #5995DA;  /* Blue */
-          padding: 20px 0;
-          display:flex;
-          justify-content:center;
+        padding: 20px 0;
+        display:flex;
+        justify-content:center;
 
-}
+    }
 
-.menu {
-      border: 1px solid #fff;  /* For debugging */
+    .menu {
+        border: 1px solid #fff;  /* For debugging */
         width: 900px;
 
         display:flex;
         justify-content:space-between;/*vs space around*/
-}
-/* we are still just moving a bunch of nested boxes around */
-/* flexbox manipulates items by adding properties to the parent items */
+    }
+    /* we are still just moving a bunch of nested boxes around */
+    .links{
+        border: 1px solid #fff;  /* For debugging */
+        display: flex;
+        justify-content: flex-end;
+    }
+    /* flexbox manipulates items by adding properties to the parent items */
+    .login{
+        margin-left:20px;
+    }
+
+    .header-container {
+        color: #5995DA;
+        background-color: #D6E9FE;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header {
+        width: 900px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+
+         align-items: center;  /* Add this */
+    }
