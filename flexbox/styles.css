@@ -45,27 +45,81 @@
         display: flex;
         justify-content: space-between;
 
-         align-items: center;  /* Add this */
+        align-items: center;  /* Add this */
     }
 
     .photo-grid-container {
-          display: flex;
-            justify-content: center;
+        display: flex;
+        justify-content: center;
 
     }
 
     .photo-grid {
-          width: 900px;
-            display: flex;
-              justify-content:center;
-              flex-wrap: wrap;
+        width: 900px;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center; 
 
     }
 
     .photo-grid-item {
-          border: 1px solid #fff;
-            width: 300px;
-            box-sizing: border-box;
-              height: 300px;
+        border: 1px solid #fff;
+        width: 300px;
+        box-sizing: border-box;
+        height: 300px;
 
+    }
+    /* flex-direction property is useful for building responsive layouts */
+    /* changing flex-direction also has an impact on justify-content and align-itmes properties */
+
+    .first-item{
+        order: 1;
+    }
+
+    /* notice here how these tags differ and are appreviated from their html cousins */
+    .last-item{
+        order:- 1;
+    }
+
+    /* items can be modified on a container level, and on a by item level with an order selectory */
+
+
+    .social,
+    .subscribe {
+
+
+        align-self: flex-end;
+        margin-bottom: 20px;
+        /* align self overrides the alignment of the containers that holds these items */
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    .footer-item {
+        border: 1px solid #fff;
+        background-color: #D6E9FE;
+        height: 200px;
+        flex: 1;
+
+    }/*don't forget about inheritance here (the descendent format)*/
+
+    .footer-one,
+    .footer-three {
+        background-color: #5995DA;
+        flex: initial;
+        width: 300px;
+
+    }
+    .signup {
+        margin-left: auto;
+        /* auto margins eat up free space in flex box */
+        /* they can be a design choice to keep html structures flatter */
     }
